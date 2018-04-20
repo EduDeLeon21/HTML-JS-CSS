@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+<script type="text/javascript" src="js/actions.js"></script>
+</head>
+<body>
+
+	<header>
+		<h1> EJERCICIOS DE EVENTOS</h1>
+	</header>
+	<section>
+		<article  id ="section1">
+				<strong> ONBLUR:</strong> ocurre cuando deselcciona un objeto, esto es valido para: button, input, label, select, textArea, body
+		
+		<H3>Ejemplos:</H3>
+		<div id="info">
+			<button type="button" onblur="onblurButton()"> me haran onblur!		</button>
+		</div>
+		<div>
+			<h5>escribe algo  y deselecciona</h5>
+			<input type="text" id="myTexto" onblur="onblurText()"/> 
+		</div>
+		<div> 
+			<h5>escribe algo  y pulsa tab
+			</h5>
+			<select id="mySelect" onblur="onblurSelect()">
+				<option value = "HOLA MUNDO">HOLA MUNDO</option>
+				<option value = "HELLO WORLD">HELLO WORLD</option>
+				<option value = "CIAO MONDO">CIAO MUNDO</option>
+
+			</select>
+			<div>
+				seleccionaste :
+				<input type="text" id="textSel"/>
+			</div>
+		</div>
+		<div>
+			<h5>escribe en mayusculas y pulsa tab</h5>
+			<textarea id="myTextArea" onkeyup ="return MaxCaracteres(100)"></textarea>
+		</div>
+		
+		</article>
+	</section>
+	<form>
+		<section id="datos">
+			<div>
+				<input type="text" name="nombre" id="nombre" />
+			</div>
+			<div>
+				<input type="text" name="apellido" id="apellido">
+			</div>
+			<div>
+				<select id="sexo" name = "sexo" id = "sexo">
+					<option value = "M">Masculino</option>
+					<option value="F">Femenino</option>
+			</select>
+			</div>
+			<div>
+				<input type="radio" name="pregunta" value="SI" id="opcionSi"/>SI
+				<input type="radio" name="pregunta" value="NO"/>NO
+
+			</div>
+		</section>
+		<section id="opciones">
+			<button type="button" name="btnOpciones" onclick="ImprimirValores()" >valores</button>
+					
+		</section>
+		<section id = "valores">
+			
+		</section>
+	</form>
+	 
+</body>
+</html>
