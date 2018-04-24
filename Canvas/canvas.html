@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<!--<section>
+		<canvas id="c" width="200" height="200"></canvas>
+	
+	</section>-->
+	<section>
+			<canvas id="figure" width="500" height="500"> </canvas>
+	</section>
+	<script type="text/javascript">
+		 //var c = document.querySelector("#c");
+		 //var ctx = c.getContext("2d");
+		 var figure = document.querySelector("#figure")
+		 var ctxF = figure.getContext("2d");
+		 ctxF.fillStyle	 = "blue";
+		 //var image = new Image();
+		 //image.setAttribute("crossOrigin", "anonymous");
+		//image.src = "acb.jpg";
+
+		// image.onload = function()
+		// {
+		 	
+		 //	ctx.drawImage(image, 0, 0, c.width, c.height)
+		 	//var savedImage = c.toDataURL();
+		 	//window.open(savedImage);
+		 	//console.log("loaded Image");
+
+		 //}
+
+	/*	ctxF.fillRect(100,100,100,100);
+		
+		 ctxF.strokeRect(50,50,50,50);
+		 ctxF.translate(20,40);
+		 ctxF.beginPath();
+		 ctxF.moveTo(10,10);
+		 ctxF.lineTo(10,50);
+		 ctxF.lineTo(50,50);
+		 ctxF.lineTo(50,10);
+		 ctxF.lineTo(10,10);
+		 ctxF.closePath();	
+		 ctxF.fill();
+
+		 ctxF.strokeText("HELLO WORLD",50,10)*/
+
+		 ctxF.font = "36pt Impact";
+		 ctxF.textAlign ="center";
+
+		/* ctxF.fillStyle = "blue";
+		 ctxF.fillText("CANVAS MEMES!", figure.width/2, 40);
+*/
+		 ctxF.strokeStyle ="black";
+		 ctxF.lineWidth = 1;
+		 ctxF.strokeText("CANVAS MEMES!", figure.width/2, 40);
+		// ctxF.clearRect(0, 0, figure.width, figure.height);//borrar 
+	</script>
+</body>
+</html>
